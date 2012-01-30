@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HotspotFetcher">
+</Property><Property Name="Solution File" Value="C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\HotspotFetcher.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\HotspotFetcher.suo">
+</Property><Property Name="Date" Value="Tuesday, March 29, 2011">
+</Property><Property Name="Time" Value="9:32 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="HotspotFetcher.sln" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher.sln">
+</Event><Event ErrorLevel="0" Project="" Source="HotspotFetcher.suo" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher.suo">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\HotspotFetcher.csproj" Description="Project file successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher\HotspotFetcher.csproj">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\Form1.cs" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher\Form1.cs">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\Form1.designer.cs" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher\Form1.designer.cs">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\HotspotFetch.cs" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher\HotspotFetch.cs">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\Wowhead.cs" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher\Wowhead.cs">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\Form1.resx" Description="File successfully backed up as C:\Users\Smarter\Desktop\hb-dev-smarter\HotspotFetcher\Backup\HotspotFetcher\Form1.resx">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\HotspotFetcher.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HotspotFetcher" Source="HotspotFetcher\HotspotFetcher.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="HotspotFetcher.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="HotspotFetcher.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HotspotFetcher" Source="HotspotFetcher\HotspotFetcher.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

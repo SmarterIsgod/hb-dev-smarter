@@ -1,0 +1,312 @@
+using System;
+using Styx.Combat.CombatRoutine;
+using TreeSharp;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Globalization;
+using System.Linq;
+
+using CommonBehaviors.Actions;
+
+using Styx;
+using Styx.Helpers;
+using Styx.Logic;
+using Styx.Logic.Combat;
+using Styx.WoWInternals;
+using Styx.WoWInternals.WoWCache;
+using Styx.WoWInternals.WoWObjects;
+
+using Action = TreeSharp.Action;
+using Sequence = TreeSharp.Sequence;
+
+
+namespace SmartLock
+{
+    public class SmartLock : CombatRoutine
+    {
+        public override string Name {get { return "SmartLock"; }} 
+        public override WoWClass Class {get { return WoWClass.Warlock; } }
+        public static LocalPlayer Me { get { return StyxWoW.Me; }}
+        public static WoWUnit Pet { get { return Me.Pet; }}
+        public List<WoWUnit> AggroUnits { get { return ObjectManager.GetObjectsOfType<WoWUnit>(true, false).Where(o => o.IsTargetingMeOrPet || (o.TaggedByMe && o.IsAlive)).OrderBy(o => o.DistanceSqr).ToList(); } }
+        private readonly WaitTimer _castTimer = WaitTimer.OneSecond;
+        private readonly Random _rand = new Random();
+
+        #region Init
+
+        #region Enums
+        public enum PetAction
+        {
+            // Yep
+            Attack = 1,
+            Follow = 2,
+            MoveTo = 3,
+
+            // Felguard
+            LegionStrike = 4,
+            Pursuit = 5,
+            AxeToss = 6,
+
+            // Felpup
+            DevourMagic = 4,
+
+            // Succubus
+            LashOfPain = 4,
+            Seduction = 5,
+            Whiplash = 6,
+
+            // Void
+            Sacrifice = 4,
+            Torment = 5,
+            Suffering = 6,
+
+            // Imp
+            Firebolt = 4,
+            BloodPact = 5,
+
+            // Stances
+            Aggressive = 8,
+            Defensive = 9,
+            Passive = 10,
+        }
+
+        public enum PetType
+        {
+            // These are CreatureFamily IDs. See 'CurrentPet' for usage.
+            None = 0,
+            Imp = 23,
+            Felguard = 29,
+            Voidwalker = 16,
+            Felhunter = 15,
+            Succubus = 17,
+        }
+
+        #endregion
+
+        public override void Initialize()
+        {
+            Logging.Write(Color.DeepSkyBlue, "SmartLock CC Loaded.");
+            // Hook this to prevent double casts, we'll setup a casting wait timer here
+            Lua.Events.AttachEvent("UNIT_SPELLCAST_SUCCEEDED", HandleSpellTimerReset);
+        }
+        private void HandleSpellTimerReset(object sender, LuaEventArgs args)
+        {
+            // Don't care about other unit's spells
+            if (args.Args[0].ToString() != "player")
+                return;
+
+            // A random time to wait...
+            _castTimer.WaitTime = new TimeSpan(0, 0, 0, 0, _rand.Next(150, 300));
+            _castTimer.Reset();
+        }
+
+        private void Cast(string spellName, WoWUnit onUnit)
+        {
+            // Don't do shit just yet. This prevents double casts, and mimics player laziness.
+            if (!_castTimer.IsFinished)
+                return;
+
+            if (onUnit != null)
+                Logging.Write(Color.DodgerBlue, string.Format("Casting {0} on {1}", spellName, (onUnit.Name == Me.Name ? "myself" : onUnit.Name)));
+            else
+                Logging.Write(Color.DarkSlateBlue, string.Format("Casting {0}", spellName));
+            SpellManager.Cast(spellName, onUnit);
+        }
+
+        private void Buff(string spellName, WoWUnit onUnit)
+        {
+            // Don't do shit just yet. This prevents double casts, and mimics player laziness.
+            if (!_castTimer.IsFinished)
+                return;
+
+            if (onUnit != null)
+                Logging.Write(Color.Purple, string.Format("Buffing {0} on {1}", spellName, (onUnit.Name == Me.Name ? "myself" : onUnit.Name)));
+            else
+                Logging.Write(Color.Purple, string.Format("Buffing {0}", spellName));
+
+            SpellManager.Cast(spellName, onUnit);
+        }
+
+        protected Composite CreateSpellCast(string spellName)
+        {
+            return CreateSpellCast(spellName, () => true);
+        }
+
+        private bool CanCastOn(string spell, WoWUnit unit)
+        {
+            if (!SpellManager.HasSpell(spell))
+            {
+                return false;
+            }
+            return SpellManager.CanCast(spell, unit);
+        }
+
+        private bool CanBuffOn(string spell, WoWUnit unit)
+        {
+            if (!SpellManager.HasSpell(spell))
+            {
+                return false;
+            }
+            return SpellManager.CanBuff(spell, unit);
+        }
+
+        protected Composite CreateSpellCast(string spellName, Func<bool> extra)
+        {
+            return CreateSpellCast(spellName, extra, () => Me.CurrentTarget);
+        }
+
+        protected Composite CreateSpellCast(string spellName, Func<WoWUnit> onTarget)
+        {
+            return CreateSpellCast(spellName, () => true, onTarget);
+        }
+
+        protected Composite CreateSpellCast(string spellName, Func<bool> extra, Func<WoWUnit> onTarget)
+        {
+            return new Decorator(
+                ret => CanCastOn(spellName, onTarget()) && extra(),
+                new Action(ret => Cast(spellName, onTarget())));
+        }
+
+        protected Composite CreateBuffCast(string spellName)
+        {
+            return CreateBuffCast(spellName, () => true);
+        }
+
+        protected Composite CreateBuffCast(string spellName, Func<WoWUnit> onTarget)
+        {
+            return CreateBuffCast(spellName, () => true, onTarget);
+        }
+
+        protected Composite CreateBuffCast(string spellName, Func<bool> extra)
+        {
+            return CreateBuffCast(spellName, extra, () => Me);
+        }
+
+        protected Composite CreateBuffCast(string spellName, Func<bool> extra, Func<WoWUnit> onTarget)
+        {
+            return new Decorator(
+                ret => CanBuffOn(spellName, onTarget()) && extra(),
+                new Action(ret => Buff(spellName, onTarget())));
+        }
+
+        protected Composite CreateSummonPet()
+        {
+            // Don't run this stuff if we have a pet... mmmkay....
+            return new Decorator(
+                ret => Me.Pet == null,
+                new PrioritySelector(
+                // Make sure we wait while casting.
+                    new Decorator(
+                        ret => Me.IsCasting,
+                        new ActionAlwaysSucceed()),
+                    new Decorator(
+                        ret => Me.Combat,
+                // Don't waste the Soulburn if we have rebirth 
+                        CreateBuffCast("Soulburn", () => !Me.ActiveAuras.ContainsKey("Demonic Rebirth"))),
+                // Always always always summon the felguard if we can. Period.
+                    CreateSpellCast("Summon Felguard")));
+        }
+
+        protected Composite UsePetAction(PetAction action)
+        {
+            return new Action(ret => Lua.DoString(string.Format("CastPetAction({0})", (int)action)));
+        }
+
+        #endregion
+
+
+        #region Rest
+
+        public override Composite RestBehavior
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        #endregion
+
+        #region PreCombatBuff
+        private Composite _buffBehavior;
+        protected Composite CreateSimpleBuffBehavior()
+        {
+            return new Decorator(
+                ret => !Me.Mounted,
+                new PrioritySelector(
+                    new Decorator(
+                        ret => Me.IsCasting,
+                        new ActionAlwaysSucceed()),
+                    CreateSummonPet(),
+                    CreateBuffCast("Unending Breath"),
+                    CreateBuffCast("Soul Link", () => Me.Pet != null),
+                    CreateBuffCast("Fel Armor", () => !Me.ActiveAuras.ContainsKey("Fel Armor"))));
+        }
+        public override Composite PreCombatBuffBehavior
+        {
+            get
+            {
+                return _buffBehavior ?? (_buffBehavior = CreateSimpleBuffBehavior());
+            }
+        }
+        #endregion
+
+        #region PullBuff
+
+        private Composite _pullBuffBehavior;
+        protected Composite CreatePullBuffBehavior()
+        {
+            return new Decorator(
+                ret => !Me.Mounted,
+                new PrioritySelector(
+                    new Decorator(
+                        ret => Me.IsCasting,
+                        new ActionAlwaysSucceed()),
+                    CreateBuffCast("Demonic Empowerment", () => !Me.Pet.ActiveAuras.ContainsKey("Demonic Empowerment"))));
+                
+        }
+
+        public override Composite PullBuffBehavior
+        {
+            get
+            {
+                return _pullBuffBehavior ?? (_pullBuffBehavior = CreatePullBuffBehavior()); 
+            }
+        }
+        #endregion
+
+        #region Pull
+
+        public override Composite PullBehavior
+        {
+            get { throw new NotImplementedException(); }
+        }
+        #endregion
+
+        #region CombatBuff
+        public override Composite CombatBuffBehavior
+        {
+            get { throw new NotImplementedException(); }
+        }
+        #endregion
+
+        #region Combat
+        public override Composite CombatBehavior
+        {
+            get { throw new NotImplementedException(); }
+        }
+        #endregion
+
+        #region Heal
+        public override Composite HealBehavior
+        {
+            get { throw new NotImplementedException(); }
+        }
+        #endregion
+
+        #region MoveToTarget
+        public override Composite MoveToTargetBehavior
+        {
+            get { throw new NotImplementedException(); }
+        }
+        #endregion
+
+    }
+}

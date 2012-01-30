@@ -1,0 +1,65 @@
+Single target rotation:
+Spam Mangle
+
+Multitarget rotation
+Spam swipe
+
+If health is < 70% cast rejunevation
+if health is < 90% cast Barkskin
+if health is < 60% cast survival instincts
+
+
+
+
+Druid info:
+Druids use a buff called Mark of the Wild [MOTW]. It has 60 min duration
+and will remove any form you're currently in. This should be on at all times.
+
+When pulling you want to be in cat form and you would typically use Feral Charge (Cat) 
+to get to your target faster. If it is on cooldown you'd just run to the target.
+
+Barkskin can be cast in any form.
+
+The following spells can only be cast while in catform:
+Mangle
+Swipe
+Survival Instincts
+Feral Charge (Cat)
+
+The following spells will remove cat form when cast:
+Mark of the Wild
+Rejuvenation
+
+Info about the abilities:
+Mangle:
+Single target dps. No cooldown. Costs 35 Energy.
+
+Swipe:
+Attacks any mob within melee range all around the player. No cooldown. Costs 45 Energy
+
+Survival Instincts:
+Redude damage taken by 50%. No Global Cooldown [GCD]. 3 min cooldown. No cost.
+
+Barkskin:
+Reduce damage taken by 20%. No GCD. 1 min cooldown. No cost.
+
+Feral Charge (Cat):
+Will charge to the target. 8-25 yards range (notice minimum range). 
+Costs 10 Energy. 30 sec cooldown.
+
+Mark of the Wild:
+A buff that lasts 60 min. Keep up at all times - is removed upon death.
+
+Rejuvenation:
+A hot that will get you out of cat form. Return to cat form right after. It does initiate
+a GCD. Costs mana, but fighting in cat form will give mana, so you'll almost never run out.
+
+
+So..
+1. Log in -> buff yourself -> go to cat form (you run faster in cat form than caster form)
+2. Find a target -> Feral charge or run to target.
+3.a If target is alone -> spam mangle
+3.b If there are other mobs within range, use swipe.
+4. When player health get below 90% -> Cast Barkskin
+5. When player health get below 70% -> Cast Rejuvenation -> Go to Cat Form
+6. When player health get below 60% -> Cast Survival Instincts.

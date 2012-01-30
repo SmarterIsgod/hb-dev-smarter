@@ -1,0 +1,47 @@
+﻿Plugin: NOTaBot
+
+Purpose: To interact with other players in a human fashion
+
+Features:
+	-Track followers/observers
+	-"Aggro" system keeps track of how much interest person has
+		-interacts accordingly
+	-Knows the difference between who is following who
+	-Interacts in the form of:
+		-emoticons
+		-whispers
+		-"/1 So-and-so is a stalker..." or similar public messages
+		-Final warning and /ignore
+		
+Aggro system
+
+d = distance to player
+t = time in d distance to player
+
+	Prototype Formula: (100-d)/7.5*t
+
+	Formula yields the following results:
+	T	d(y)	99		75		50		25
+	10			1.33	33.33	66.66	100
+	20			2.66	66.66	133.33	200
+	30			4		100		200		300
+
+Dealing with multiple players
+
+What makes a character look like a bot?
+	-no interaction with others
+		-no whispers/emotes
+		-unphasable 9(can't be annoyed by followers)
+	-botlike movement
+		-no straffing/jumping/randomness
+		-snappy 180° direction change
+	
+Features needed:
+	-detect player suspicion
+	
+Scenario
+	
+	
+
+
+Levels of Interaction

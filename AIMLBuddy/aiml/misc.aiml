@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+<!-- basics -->
+	<category>
+		<pattern>NEGATIVE</pattern>
+		<template>
+			<random>
+				<li>no</li>
+				<li>nope</li>
+				<li>nah</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>POSITIVE</pattern>
+		<template>
+			<random>
+				<li>yes</li>
+				<li>yup</li>
+				<li>yep</li>
+				<li>ya</li>
+				<li>yea</li>
+				<li>yah</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>EMPTY</pattern>
+		<template>
+			<random>
+				<li>meh</li>
+				<li>whatever</li>
+				<li>orly</li>
+			</random>
+		</template>
+	</category>
+
+<!-- salutations -->
+	<category>
+		<pattern>BYE</pattern>
+		<template>
+			<random>
+				<li>Bye</li>
+				<li>Adios</li>
+				<li>Goodbye</li>
+				<li>Bye bye</li>
+				<li>Goodbye</li>
+				<li>Sayonara</li>
+				<li>Bye for now</li>
+				<li>See you later!</li>
+				<li>See you later</li>
+				<li>Until next time</li>
+				<li>TTYL, <get name="name"/></li>
+				<li>See you later <get name="name"/></li>
+				<li>Thanks <get name="name"/></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HELLO</pattern>
+		<template>
+			<random>
+				<li>hi</li>
+				<li>hey there</li>
+				<li>whats up</li>
+				<li>yo</li>
+				<li>hey</li>
+			</random>
+		</template>
+	</category>  
+
+<!-- laugh -->
+	<category>
+		<pattern>LAUGH</pattern>
+		<template>
+			<random>
+				<li>LOL</li>
+				<li>ROFLMAO</li>
+				<li>ROFL</li>
+				<li>HAH</li>
+				<li>HAHA</li>
+				<li>HAHAH</li>
+				<li>HEHE</li>
+				<li>HEHEH</li>
+			</random>
+		</template>
+	</category>
+
+<!-- Question marks -->
+
+	<category>
+		<pattern>??*</pattern>
+		<template>
+			<random>
+				<li>What?</li>
+				<li>yhea?</li>
+				<li>whats up?</li>
+				<li>why the doubt</li>
+				<li>OK ????</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>?</pattern>
+		<template>
+			<random>
+				<li>what</li>
+				<li>yhea</li>
+				<li>whats up?</li>
+				<li>why the doubt</li>
+				<li>OK ????</li>
+			</random>
+		</template>
+	</category>
+
+	
+<!-- apologise -->
+	<category>
+		<pattern>SORRY</pattern>
+		<template>
+			<random>
+				<li>sry</li>
+				<li>sorry</li>
+			</random>
+		</template>
+	</category>
+	
+<!-- uncertainty -->
+	<category>
+		<pattern>NOT SURE</pattern>
+		<template>
+			<random>
+				<li>not sure</li>
+				<li>dont know</li>
+				<li>shrug</li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>WHY *</pattern><template><srai>NOT SURE</srai></template></category>
+	<category><pattern>HOW *</pattern><template><srai>NOT SURE</srai></template></category>
+	<category><pattern>WHERE *</pattern><template><srai>NOT SURE</srai></template></category>
+	<category><pattern>WHEN *</pattern><template><srai>NOT SURE</srai></template></category>
+	<category><pattern>WHAT *</pattern><template><srai>NOT SURE</srai></template></category>
+
+<!-- making sense -->
+	<category>
+		<pattern>NOT MAKING SENSE</pattern>
+		<template>
+			<random>
+				<li><srai>EMPTY</srai>, tired</li>
+				<li><srai>EMPTY</srai></li>
+				<li>so tired <srai>LAUGH</srai></li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>NOT MAKING SENSE *</pattern><template><srai>NOT MAKING SENSE</srai></template></category>
+	<category><pattern>THAT MAKES NO *</pattern><template><srai>NOT MAKING SENSE</srai></template></category>
+	<category><pattern>DO YOU MAKE SENSE *</pattern><template><srai>NOT MAKING SENSE</srai></template></category>
+	<category><pattern>YOU DO NOT MAKE ANY SENSE</pattern><template><srai>NOT MAKING SENSE</srai></template></category>
+</aiml>

@@ -1,0 +1,25 @@
+<HBProfile>
+	<Name>Orgrimmar to Blasted Lands</Name>
+	<MinDurability>0</MinDurability>
+	<MinFreeBagSlots>0</MinFreeBagSlots>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>86</MaxLevel>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>False</MailGreen>
+	<SellGrey>False</SellGrey>
+	<SellWhite>False</SellWhite>
+	<SellGreen>False</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<QuestOrder>
+		<While Condition="Me.MapId == 0">
+			<CustomBehavior File="FlyTo" X="-11897.47" Y="-3205.651" Z="-14.73334" DestName="The Dark Portal" />
+			<RunTo X="-11899.47" Y="-3207.651" Z="-14.73334" />
+			<CustomBehavior File="GoThruPortal" X="-11908.7" Y="-3207.851" Z="-14.81281" />
+			<CustomBehavior File="WaitTimer" WaitTime="60000" />
+		</While>
+	
+	</QuestOrder>
+</HBProfile>

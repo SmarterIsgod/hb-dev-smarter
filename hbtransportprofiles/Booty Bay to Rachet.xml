@@ -1,0 +1,30 @@
+<HBProfile>
+	<Name>Booty Bay to Rachet</Name>
+	<MinDurability>0</MinDurability>
+	<MinFreeBagSlots>0</MinFreeBagSlots>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>86</MaxLevel>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>False</MailGreen>
+	<SellGrey>False</SellGrey>
+	<SellWhite>False</SellWhite>
+	<SellGreen>False</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<QuestOrder>
+		<While Condition="Me.MapId == 0">
+			<CustomBehavior File="FlyTo" X="-14284.94" Y="557.0261" Z="8.685248" DestName="The Cape of Stranglethorn Dock" />
+			<CustomBehavior File="UseTransport" 
+							TransportId="20808"
+							WaitAtX="-14284.94" WaitAtY="557.0261" WaitAtZ="8.685248"
+							TransportStartX="-14277.75" TransportStartY="582.8661" TransportStartZ="0.04935534"
+							TransportEndX="0" TransportEndY="0" TransportEndZ="0"
+							GetOffX="-995.1111" GetOffY="-3822.873" GetOffZ="5.573237"
+							StandOnX="-14277.85" StandOnY="573.6787" StandOnZ="6.0506"
+							/>
+		</While>
+	
+	</QuestOrder>
+</HBProfile>

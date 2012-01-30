@@ -1,0 +1,30 @@
+<HBProfile>
+	<Name>Rachet to Booty Bay</Name>
+	<MinDurability>0</MinDurability>
+	<MinFreeBagSlots>0</MinFreeBagSlots>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>86</MaxLevel>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>False</MailGreen>
+	<SellGrey>False</SellGrey>
+	<SellWhite>False</SellWhite>
+	<SellGreen>False</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<QuestOrder>
+		<While Condition="Me.MapId == 1">
+			<CustomBehavior File="FlyTo" X="-997.61" Y="-3823.397" Z="5.451923" DestName="Northern Barrens Dock" />
+			<CustomBehavior File="UseTransport" 
+							TransportId="20808"
+							WaitAtX="-997.61" WaitAtY="-3823.397" WaitAtZ="5.451923"
+							TransportStartX="-1005.613" TransportStartY="-3841.648" TransportStartZ="-0.04353272"
+							TransportEndX="-14277.75" TransportEndY="582.8661" TransportEndZ="0.0375153"
+							GetOffX="-14284.94" GetOffY="557.0261" GetOffZ="8.685248"
+							StandOnX="-999.5706" StandOnY="-3836.092" StandOnZ="6.04667"
+							/>
+		</While>
+	
+	</QuestOrder>
+</HBProfile>

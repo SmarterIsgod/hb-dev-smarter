@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarter.Auction", "Smarter.Auction\Smarter.Auction.csproj", "{DB2D5A67-9422-41C1-95CD-6396CC9A2A3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB2D5A67-9422-41C1-95CD-6396CC9A2A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2D5A67-9422-41C1-95CD-6396CC9A2A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2D5A67-9422-41C1-95CD-6396CC9A2A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2D5A67-9422-41C1-95CD-6396CC9A2A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

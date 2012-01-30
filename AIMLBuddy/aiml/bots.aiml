@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+<!-- are you AFK. -->
+
+	<category>
+		<pattern>_ARE YOU THERE *</pattern>
+		<template>
+			<random>
+				<li>Yes, why?</li>
+				<li>Whats up?</li>
+				<li>why</li>
+				<li>ofc, what can I do for you</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>_ARE YOU AFK *</pattern>
+		<template>
+			<random>
+				<li>no</li>
+				<li>I am here</li>
+				<li>why</li>
+				<li>what can I do for you</li>
+			</random>
+		</template>
+	</category>
+
+
+
+<!-- you are a bot. -->
+	<category>
+		<pattern>YOU ARE A BOT</pattern>
+		<template>
+			<random>
+				<li>uh <srai>NEGATIVE</srai></li>
+				<li><srai>NEGATIVE</srai></li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>* YOU ARE A BOT *</pattern><template><srai>YOU ARE A BOT</srai></template></category>
+	<category><pattern>YOU ARE A BOT *</pattern><template><srai>YOU ARE A BOT</srai></template></category>
+	<category><pattern>YOU ARE A COMPUTER *</pattern><template><srai>YOU ARE A BOT</srai></template></category>
+	<category><pattern>YOU ARE BOT *</pattern><template><srai>YOU ARE A BOT</srai></template></category>
+	<category><pattern>YOU ARE NOT A HUMAN *</pattern><template><srai>YOU ARE A BOT</srai></template></category>
+	<category><pattern>YOUR A BOT *</pattern><template><srai>YOU ARE A BOT</srai></template></category>
+
+<!-- are you a bot? -->
+	<category>
+		<pattern>ARE YOU A BOT</pattern>
+		<template>
+			<random>
+				<li><srai>NEGATIVE</srai> <srai>LAUGH</srai></li>
+				<li><srai>NEGATIVE</srai></li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>ARE YOU A BOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A REALLY *</pattern><template><srai>YOU ARE A <star/> </srai></template></category>
+	<category><pattern>ARE YOU A REAL BOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU ARTIFICALLY *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A PROGRAM *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU COMPUTER *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU PROGRAMMED TO *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU PROGRAM *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A CHATBOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A CHATTERBOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU AN * COMPUTER *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A * COMPUTER *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A COMPUTER *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A REAL BOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU CHATBOOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU BOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU AN * ENTITY *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>AM I TALKING TO A BOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU THE ARTIFICIAL *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU THE COMPUTER *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU AN ARTIFICIAL *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A * COMPUTER *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A ARTIFICIAL *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>ARE YOU A CHATTERBOT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+	<category><pattern>YOU ARE A COMPUTER RIGHT *</pattern><template><srai>ARE YOU A BOT</srai></template></category>
+
+<!-- are you human? -->
+	<category>
+		<pattern>ARE YOU HUMAN</pattern>
+		<template>
+			<random>
+				<li>duh <srai>LAUGH</srai></li>
+				<li><srai>POSITIVE</srai> <srai>LAUGH</srai></li>
+				<li><srai>POSITIVE</srai></li>
+			</random>
+		</template>
+	</category>
+	<category><pattern>YOU'RE HUMAN RIGHT *</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+	<category><pattern>ARE YOU EVEN HUMAN *</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+	<category><pattern>ARE YOU A REAL HUMAN *</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+	<category><pattern>ARE YOU A REAL PERSON *</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+	<category><pattern>ARE YOU A PERSON *</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+	<category><pattern>ARE YOU A HUMAN *</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+	<category><pattern>ARE YOU A HUMAN</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+	<category><pattern>ARE YOU HUMAN *</pattern><template><srai>ARE YOU HUMAN</srai></template></category>
+
+
+<!-- are you there? -->
+
+<category>
+	<pattern>hello</pattern>
+	<template>
+	  <random>
+			<li>hay</li>
+			<li>hey</li>
+			<li>salut mate</li>
+			<li>hiho</li>
+	  </random>
+	</template>
+</category>
+
+  <category>
+    <pattern>heya *</pattern>
+    <template>
+      <random>
+        <li>hay</li>
+        <li>hey</li>
+        <li>salut mate</li>
+        <li>hiho</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>_ how are you *</pattern>
+    <template>
+      <random>
+        <li>Good</li>
+        <li>how ar you, im fine</li>
+        <li>ok, you?</li>
+        <li>im ok</li>
+      </random>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern> _ trying to get a group *</pattern>
+    <template>
+      <random>
+        <li>keep looking</li>
+        <li>sorry but I am not comming</li>
+        <li>good luck with looking</li>
+      </random>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern> _ looking for a *</pattern>
+    <template>
+      <random>
+        <li>keep looking</li>
+        <li>sorry but I am not comming</li>
+        <li>good luck with looking</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern> _ replace me *</pattern>
+    <template>
+      <random>
+        <li>try someone else</li>
+        <li>not today bro</li>
+        <li>one other time</li>
+      </random>
+    </template>
+  </category>
+
+  
+<category>
+<pattern>ARE U THERE</pattern>
+    <template>
+      <random>
+        <li>Yes I am, but busy</li>
+        <li>Kinda busy, you?</li>
+        <li>ofc, but very busy need to get some gold</li>
+      </random>
+    </template>
+</category>
+
+<category>
+	<pattern>_ARE U THERE*</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>_ARE U THERE</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>ARE U THERE*</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>U THERE</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>*U THERE</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>_U THERE*</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>U THERE*</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>R U THERE*</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+<category>
+	<pattern>_R U THERE*</pattern>
+	<template><srai>ARE U THERE</srai></template>
+</category>
+
+
+</aiml>

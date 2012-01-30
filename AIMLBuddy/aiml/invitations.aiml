@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category><pattern>WANT</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* WANT *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>WANT *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* WANT</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ WANT _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ WANT</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>WANT _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* WANT _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ WANT *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>NEED</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* NEED *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>NEED *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* NEED</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ NEED _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ NEED</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>NEED _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* NEED _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ NEED *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>PLZ</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* PLZ *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>PLZ *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* PLZ</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ PLZ _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ PLZ</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>PLZ _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* PLZ _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ PLZ *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>PLEASE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* PLEASE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>PLEASE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* PLEASE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ PLEASE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ PLEASE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>PLEASE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* PLEASE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ PLEASE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>QUEST</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* QUEST *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>QUEST *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* QUEST</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ QUEST _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ QUEST</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>QUEST _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* QUEST _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ QUEST *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>INSTANCE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* INSTANCE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>INSTANCE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* INSTANCE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ INSTANCE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ INSTANCE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>INSTANCE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* INSTANCE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ INSTANCE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>INST</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* INST *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>INST *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* INST</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ INST _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ INST</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>INST _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* INST _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ INST *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>HELP</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* HELP *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>HELP *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* HELP</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ HELP _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ HELP</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>HELP _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* HELP _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ HELP *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>CAN YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* CAN YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>CAN YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* CAN YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ CAN YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ CAN YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>CAN YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* CAN YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ CAN YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>WILL YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* WILL YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>WILL YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* WILL YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ WILL YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ WILL YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>WILL YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* WILL YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ WILL YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+	<category><pattern>COULD YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* COULD YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>COULD YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* COULD YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ COULD YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ COULD YOU</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>COULD YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* COULD YOU _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ COULD YOU *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+
+	<category><pattern>* FEEL LIKE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>FEEL LIKE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* FEEL LIKE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ FEEL LIKE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ FEEL LIKE</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>FEEL LIKE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>* FEEL LIKE _</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	<category><pattern>_ FEEL LIKE *</pattern><template><srai>SORRY</srai> <srai>NEGATIVE</srai></template></category>
+	
+</aiml>

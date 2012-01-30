@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NodeDatabaseDataSet" targetNamespace="http://tempuri.org/NodeDatabaseDataSet.xsd" xmlns:mstns="http://tempuri.org/NodeDatabaseDataSet.xsd" xmlns="http://tempuri.org/NodeDatabaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="NodeDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="NodeDatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GatherMateBuddy.Properties.Settings.GlobalReference.Default.NodeDatabaseConnectionString" Provider="Microsoft.SqlServerCe.Client.3.5" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NodeDatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="NodeDatabaseDataSet" msprop:Generator_UserDSName="NodeDatabaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NodeData" msprop:Generator_TableClassName="NodeDataDataTable" msprop:Generator_TableVarName="tableNodeData" msprop:Generator_TablePropName="NodeData" msprop:Generator_RowDeletingName="NodeDataRowDeleting" msprop:Generator_UserTableName="NodeData" msprop:Generator_RowChangingName="NodeDataRowChanging" msprop:Generator_RowEvHandlerName="NodeDataRowChangeEventHandler" msprop:Generator_RowDeletedName="NodeDataRowDeleted" msprop:Generator_RowEvArgName="NodeDataRowChangeEvent" msprop:Generator_RowChangedName="NodeDataRowChanged" msprop:Generator_RowClassName="NodeDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Entry" msprop:Generator_ColumnVarNameInTable="columnEntry" msprop:Generator_ColumnPropNameInRow="Entry" msprop:Generator_ColumnPropNameInTable="EntryColumn" msprop:Generator_UserColumnName="Entry" type="xs:int" minOccurs="0" />
+              <xs:element name="X" msprop:Generator_ColumnVarNameInTable="columnX" msprop:Generator_ColumnPropNameInRow="X" msprop:Generator_ColumnPropNameInTable="XColumn" msprop:Generator_UserColumnName="X" type="xs:double" minOccurs="0" />
+              <xs:element name="Y" msprop:Generator_ColumnVarNameInTable="columnY" msprop:Generator_ColumnPropNameInRow="Y" msprop:Generator_ColumnPropNameInTable="YColumn" msprop:Generator_UserColumnName="Y" type="xs:double" minOccurs="0" />
+              <xs:element name="Z" msprop:Generator_ColumnVarNameInTable="columnZ" msprop:Generator_ColumnPropNameInRow="Z" msprop:Generator_ColumnPropNameInTable="ZColumn" msprop:Generator_UserColumnName="Z" type="xs:double" minOccurs="0" />
+              <xs:element name="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnPropNameInTable="CountColumn" msprop:Generator_UserColumnName="Count" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

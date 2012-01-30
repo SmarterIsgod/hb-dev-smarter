@@ -1,0 +1,102 @@
+<HBProfile>
+  <Name></Name>
+  <MinDurability>0.4</MinDurability>
+  <MinFreeBagSlots>2</MinFreeBagSlots>
+  <SellGrey>True</SellGrey>
+  <SellWhite>True</SellWhite>
+  <SellGreen>True</SellGreen>
+  <MailWhite>True</MailWhite>
+  <MailGreen>True</MailGreen>
+  <MailBlue>True</MailBlue>
+  <MailPurple>True</MailPurple>
+
+  <Vendors>
+		<Vendor Name="Gart Mistrunner" Entry="3060" Type="Train" TrainClass="Druid" X="-2898.491" Y="-260.25" Z="59.61401" />
+  </Vendors>
+  
+  <SubProfile>
+    <Name>1-4</Name>
+    <MinLevel>1</MinLevel>
+    <MaxLevel>5</MaxLevel>
+
+	<!-- Quest Overrides -->
+	
+    <QuestOrder IgnoreCheckpoints="false">
+		<CustomBehavior File="UserSettings" TrainNewSkills="False" LearnFlightPaths="True" UseFlightPaths="False" LootMobs="True" PullDistance="30" />
+		<Checkpoint Level="1" />
+		<PickUp QuestName="The First Step" QuestId="14449" GiverName="Chief Hawkwind" GiverId="2981" />
+		<TurnIn QuestName="The First Step" QuestId="14449" TurnInName="Grull Hawkwind" TurnInId="2980" />
+		<PickUp QuestName="Rite of Strength" QuestId="14452" GiverName="Grull Hawkwind" GiverId="2980" />
+			<Objective QuestName="Rite of Strength" QuestId="14452" Type="KillMob" MobId="2952" KillCount="6" />
+		<TurnIn QuestName="Rite of Strength" QuestId="14452" TurnInName="Grull Hawkwind" TurnInId="2980" />	
+	
+		<!-- Add Grind Area / GrindTo -->
+		<Checkpoint Level="2" />
+		<PickUp QuestName="Our Tribe, Imprisoned" QuestId="24852" GiverName="Grull Hawkwind" GiverId="2980" />
+			<Objective QuestName="Our Tribe, Imprisoned" QuestId="24852" Type="UseObject" ObjectId="202112" UseCount="4" />
+		<TurnIn QuestName="Our Tribe, Imprisoned" QuestId="24852" TurnInName="Grull Hawkwind" TurnInId="2980" />
+		<PickUp QuestName="Go to Adana" QuestId="14458" GiverName="Grull Hawkwind" GiverId="2980" />
+		<TurnIn QuestName="Go to Adana" QuestId="14458" TurnInName="Adana Thunderhorn" TurnInId="36694" />
+		<PickUp QuestName="Rite of Courage" QuestId="14456" GiverName="Adana Thunderhorn" GiverId="36694" />
+		<PickUp QuestName="Stop the Thorncallers" QuestId="14455" GiverName="Adana Thunderhorn" GiverId="36694" />
+			<Objective QuestName="Rite of Courage" QuestId="14456" Type="CollectItem" ItemId="49535" CollectCount="7" />
+			<Objective QuestName="Stop the Thorncallers" QuestId="14455" Type="KillMob" MobId="36697" KillCount="7" />
+		<TurnIn QuestName="Rite of Courage" QuestId="14456" TurnInName="Adana Thunderhorn" TurnInId="36694" />
+		<TurnIn QuestName="Stop the Thorncallers" QuestId="14455" TurnInName="Adana Thunderhorn" TurnInId="36694" />
+		
+		<!-- Add GrindTo/GrindArea -->
+		<Checkpoint Level="3" />
+		<PickUp QuestName="The Battleboars" QuestId="14459" GiverName="Adana Thunderhorn" GiverId="36694" />
+		<PickUp QuestName="Feed of Evil" QuestId="14461" GiverName="Adana Thunderhorn" GiverId="36694" />
+		<PickUp QuestName="Verdant Note" QuestId="3094" GiverName="Rohaku Stonehoof" GiverId="44927" />
+		<While Condition="HasQuest(14461) &amp;&amp; !IsQuestCompleted(14461)">
+			<UseItem ItemId="49539" QuestName="Feed of Evil" QuestId="14461" X="-3356.384" Y="-229.9205" Z="61.78617" />
+			<UseItem ItemId="49539" QuestName="Feed of Evil" QuestId="14461" X="-3386.941" Y="-211.5935" Z="61.67983" />
+			<UseItem ItemId="49539" QuestName="Feed of Evil" QuestId="14461" X="-3405.17" Y="-263.2943" Z="61.66743" />	
+		</While>
+			<Objective QuestName="The Battleboars" QuestId="14459" Type="KillMob" MobId="36696" KillCount="10" />
+			<Objective QuestName="Verdant Note" QuestId="3094" Type="CollectItem" ItemId="9581" CollectCount="1" />
+		<TurnIn QuestName="The Battleboars" QuestId="14459" TurnInName="Adana Thunderhorn" TurnInId="36694" />
+		<TurnIn QuestName="Feed of Evil" QuestId="14461" TurnInName="Adana Thunderhorn" TurnInId="36694" />
+		
+		<Checkpoint Level="4" />
+		<PickUp QuestName="Rite of Honor" QuestId="14460" GiverName="Adana Thunderhorn" GiverId="36694" />
+			<Objective QuestName="Rite of Honor" QuestId="14460" Type="CollectItem" ItemId="50473" CollectCount="1" />
+		<If Condition="HasQuest(14460) &amp;&amp; IsQuestCompleted(14460)">
+			<CustomBehavior File="RunMacro" Macro="/use Hearthstone" NumOfTimes="1" WaitTime="30000" />  
+		</If>		
+		<TurnIn QuestName="Rite of Honor" QuestId="14460" TurnInName="Chief Hawkwind" TurnInId="2981" />
+		<PickUp QuestName="Last Rites, First Rites" QuestId="24861" GiverName="Chief Hawkwind" GiverId="2981" />
+			<Objective QuestName="Last Rites, First Rites" QuestId="24861" Type="UseObject" ObjectId="50465" UseCount="1" />
+		<While Condition="HasQuest(24861) &amp;&amp; !IsQuestCompleted(24861)">
+			<UseItem ItemId="50465" QuestName="Last Rites, First Rites" QuestId="24861" X="-2908.198" Y="-254.2663" Z="59.7342" />
+		</While>		
+		<TurnIn QuestName="Last Rites, First Rites" QuestId="24861" TurnInName="Chief Hawkwind" TurnInId="2981" />
+		<PickUp QuestName="Rites of the Earthmother" QuestId="23733" GiverName="Chief Hawkwind" GiverId="2981" />
+		<TurnIn QuestName="Verdant Note" QuestId="3094" TurnInName="Gart Mistrunner" TurnInId="3060" />
+		<PickUp QuestName="Rites of the Earthmother" QuestId="23733" GiverName="Chief Hawkwind" GiverId="2981" />
+		<PickUp QuestName="Rejuvenating Touch" QuestId="27067" GiverName="Gart Mistrunner" GiverId="3060" />
+		<If Condition="HasQuest(27067) &amp;&amp; !IsQuestCompleted(27067)">
+			<CustomBehavior File="ForceSetVendor" QuestId="27067" DoTrain="true" />
+			<While Condition="HasQuest(27067) &amp;&amp; !IsQuestCompleted(27067)">
+				<CustomBehavior File="CastSpellOn" MobId="45199" SpellId="774"
+					X="-1972.388" Y="6277.719" Z="56.86252" MinRange="10"
+					NumOfTimes="5"
+					QuestId="27067"
+					QuestInLogRequirement="InLog"
+					Range="15" />
+			</While>
+		</If>
+		<TurnIn QuestName="Rejuvenating Touch" QuestId="27067" TurnInName="Gart Mistrunner" TurnInId="3060" />
+		<TurnIn QuestName="Rites of the Earthmother" QuestId="23733" TurnInName="Dyami Windsoar" TurnInId="36803" />
+		
+		<PickUp QuestName="Rite of the Winds" QuestId="24215" GiverName="Dyami Windsoar" GiverId="36803" />
+			<If Condition="HasQuest(24215) &amp;&amp; !IsQuestCompleted(24215)" >
+				<While Condition="HasQuest(24215) &amp;&amp; !IsQuestCompleted(24215)" >
+					<UseItem ItemId="49652" QuestName="Rite of the Winds" QuestId="24215" />					
+				</While>
+			</If>
+		<TurnIn QuestName="Rite of the Winds" QuestId="24215" TurnInName="Ahmo Thunderhorn" TurnInId="36644" />
+    </QuestOrder>
+  </SubProfile>
+</HBProfile>

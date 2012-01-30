@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Professionbuddy ChildrenCount="18">
+  <Comment Text="Replace Dummy with the name of the buyer." />
+  <CustomAction Code="Lua.DoString(&quot;MailRecipent = \&quot;Efredo\&quot;&quot;);" />
+  <Comment Text="Edit the prices. All prices are per stack, except for volatiles which is per unit." />
+  <CustomAction Code="Lua.DoString(&quot;ElementiumPrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;WhiptailPrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;CinderbloomPrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;JasminePrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;PyritePrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;AirPrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;EarthPrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;FirePrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;LifePrice = 100&quot;);" />
+  <CustomAction Code="Lua.DoString(&quot;WaterPrice = 100&quot;);" />
+  <Comment Text="Ignore these below" />
+  <Settings Type="Boolean" DefaultValue="true" Name="COD or AH" Summary="True for COD, False for AH" />
+  <CustomAction Code="Lua.DoString(&quot;totalprice = 0&quot;);" />
+  <Comment Text="To change AH settings, open this &quot;While&quot;" />
+  <While Condition="true" IgnoreCanRun="True" ChildrenCount="7">
+    <If Condition="MailCount &gt; 0 &amp;&amp; InbagCount (52185) &lt; 10 &amp;&amp; InbagCount (52988) &lt; 10 &amp;&amp; InbagCount (52983) &lt; 10 &amp;&amp; InbagCount (52183) &lt; 10 &amp;&amp; InbagCount (52328) &lt; 10 &amp;&amp; InbagCount (52327) &lt; 10 &amp;&amp; InbagCount (52325) &lt; 10 &amp;&amp; InbagCount (52329) &lt; 10 &amp;&amp; InbagCount (52326) &lt; 10 &amp;&amp; InbagCount (52987) &lt; 10" IgnoreCanRun="True" ChildrenCount="1">
+      <GetMailAction ItemID="" CheckNewMail="True" GetMailType="AllItems" AutoFindMailBox="True" X="0" Y="0" Z="0" MinFreeBagSlots="2" />
+    </If>
+    <If Condition="MailCount == 0 &amp;&amp; InbagCount (52185) &lt; 10 &amp;&amp; InbagCount (52988) &lt; 10 &amp;&amp; InbagCount (52983) &lt; 10 &amp;&amp; InbagCount (52183) &lt; 10 &amp;&amp; InbagCount (52328) &lt; 10 &amp;&amp; InbagCount (52327) &lt; 10 &amp;&amp; InbagCount (52325) &lt; 10 &amp;&amp; InbagCount (52329) &lt; 10 &amp;&amp; InbagCount (52326) &lt; 10 &amp;&amp; InbagCount (52987) &lt; 10" IgnoreCanRun="True" ChildrenCount="2">
+      <MoveToAction MoveType="Location" Pathing="Navigator" Entry="0" X="-8928.005" Y="616.8072" Z="100.2266" />
+      <GetItemfromBankAction ItemID="52185,52988,52983,52183,52328,52327,52325,52329,52326,52987" Amount="0" Bank="Guild" GetItemfromBankType="SpecificItem" NpcEntry="0" AutoFindBank="True" X="0" Y="0" Z="0" MinFreeBagSlots="2" WithdrawAdditively="True" />
+    </If>
+    <StackItemsAction />
+    <If Condition="(bool)Settings[&quot;COD or AH&quot;]" IgnoreCanRun="True" ChildrenCount="21">
+      <MoveToAction MoveType="NearestMailbox" Pathing="Navigator" Entry="0" X="-8861.501" Y="636.7444" Z="96.17851" />
+      <Comment Text="Elementium Ore" />
+      <While Condition="InbagCount (52185) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52185\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(ElementiumPrice/20) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Elementium Ore\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Elementium Ores (\&quot;..string.format(\&quot;%.0f\&quot;,j/20)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Twilight Jasmine" />
+      <While Condition="InbagCount (52987) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52987\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(JasminePrice/20) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Twilight Jasmine\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Twilight Jasmines (\&quot;..string.format(\&quot;%.0f\&quot;,j/20)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Whiptail" />
+      <While Condition="InbagCount (52988) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52988\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(WhiptailPrice/20) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Whiptail\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Whiptails (\&quot;..string.format(\&quot;%.0f\&quot;,j/20)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Cinderbloom" />
+      <While Condition="InbagCount (52983) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52983\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(CinderbloomPrice/20) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Cinderbloom\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Cinderblooms (\&quot;..string.format(\&quot;%.0f\&quot;,j/20)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Pyrite Ore" />
+      <While Condition="InbagCount (52183) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52183\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(PyritePrice/20) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Pyrite Ore\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Pyrite Ores (\&quot;..string.format(\&quot;%.0f\&quot;,j/20)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Volatile Air" />
+      <While Condition="InbagCount (52328) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52328\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(AirPrice) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Volatile Air\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Volatile Airs (\&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Volatile Earth" />
+      <While Condition="InbagCount (52327) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52327\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(EarthPrice) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Volatile Earth\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Volatile Earths (\&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Volatile Fire" />
+      <While Condition="InbagCount (52325) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52325\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(FirePrice) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Volatile Fire\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Volatile Fires (\&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Volatile Life" />
+      <While Condition="InbagCount (52329) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52329\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(LifePrice) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Volatile Life\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Volatile Lifes (\&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+      <Comment Text="Volatile Water" />
+      <While Condition="InbagCount (52326) &gt;= 5" IgnoreCanRun="True" ChildrenCount="3">
+        <InteractionAction Entry="0" InteractDelay="0" InteractType="GameObject" GameObjectType="Mailbox" SpellFocus="Anvil" />
+        <CustomAction Code="Thread.Sleep(300); Lua.DoString(&quot;RunMacroText(\&quot;/click MailFrameTab2\&quot;)&quot;); Thread.Sleep(300);" />
+        <CustomAction Code="Lua.DoString(&quot;local j=0 local i=0 for b=0,4 do for s=1,GetContainerNumSlots(b) do local n=GetContainerItemLink(b,s) if n then if strfind(n,\&quot;52326\&quot;) and i&lt;12 then _,c=GetContainerItemInfo(b,s) j=j+c UseContainerItem(b,s) i=i+1 end end end end codprice=j*(WaterPrice) SetSendMailCOD(codprice*10000) SendMail(MailRecipent,\&quot;Volatile Water\&quot;,\&quot;\&quot;) totalprice = totalprice+codprice DEFAULT_CHAT_FRAME:AddMessage(\&quot;Sending \&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; Volatile Waters (\&quot;..string.format(\&quot;%.0f\&quot;,j)..\&quot; stacks) C.O.D to \&quot;.. MailRecipent .. \&quot; for \&quot;..string.format(\&quot;%.0f\&quot;,codprice)..\&quot; gold.\&quot;..\&quot; Totally sent for \&quot;..string.format(\&quot;%.0f\&quot;,totalprice)..\&quot; gold this session.\&quot;,0.0,1.0,0.0)&quot;); Thread.Sleep(500);" />
+      </While>
+    </If>
+    <Comment Text="AH Settings can be changed below." />
+    <SellItemOnAhAction ItemID="" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="True" Category="Gem" SubCategoryType="WoWItemGemClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+    <If Condition="(bool)Settings[&quot;COD or AH&quot;] == false" IgnoreCanRun="True" ChildrenCount="19">
+      <MoveToAction MoveType="Location" Pathing="Navigator" Entry="0" X="-8818.79" Y="658.3963" Z="98.0942" />
+      <Comment Text="Elementium Ore" />
+      <SellItemOnAhAction ItemID="52185" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Whiptail" />
+      <SellItemOnAhAction ItemID="52988" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Cinderbloom" />
+      <SellItemOnAhAction ItemID="52983" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Pyrite Ore" />
+      <SellItemOnAhAction ItemID="52183" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Volatile Air" />
+      <SellItemOnAhAction ItemID="52328" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Volatile Earth" />
+      <SellItemOnAhAction ItemID="52327" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Volatile Fire" />
+      <SellItemOnAhAction ItemID="52325" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Volatile Life" />
+      <SellItemOnAhAction ItemID="52329" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+      <Comment Text="Volatile Water" />
+      <SellItemOnAhAction ItemID="52326" MinBuyout="0g10s0c" MaxBuyout="100g0s0c" RunTime="_24_Hours" Amount="10" StackSize="20" AmountType="Everything" AutoFindAh="True" BidPrecent="95" UndercutPrecent="0.1" UseCategory="False" Category="TradeGoods" SubCategoryType="WoWItemTradeGoodsClass" SubCategory="None" X="0" Y="0" Z="0" PostIfBelowMinBuyout="True" />
+    </If>
+  </While>
+</Professionbuddy>

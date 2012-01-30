@@ -1,0 +1,1044 @@
+[9:04:24 PM:035] Logging in...
+[9:04:24 PM:665] Buddy Sessions: 0/0
+-----
+Shared Sessions: 1/15
+[9:04:25 PM:514] Attached to WoW with ID 10184
+[9:04:25 PM:588] Honorbuddy v2.0.0.5354 started!
+[9:04:25 PM:589] Using WoW with process ID 10184
+[9:04:25 PM:589] Platform: Microsoft Windows NT 6.1.7601 Service Pack 1
+[9:04:25 PM:589] Executable Path: C:\Users\006\Desktop\ßots\HB's\HB 5354\Honorbuddy.exe
+[9:04:25 PM:594] Character is a level 85 Human DeathKnight
+[9:04:25 PM:595] Current zone is Dragonblight
+[9:04:25 PM:623] New bot added!: ArchaeologyBuddy
+[9:04:25 PM:761] [Instancebuddy v3.0.1.315]:----------------------------------------------------------------------
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]:Currently supported tanking dungeons :
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]:(This list will update itself automatically)
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]:
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 15 - 21) Deadmines
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 15 - 21) Ragefire Chasm
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 16 - 26) Shadowfang Keep
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 20 - 30) The Stockade
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 26 - 36) Scarlet Monastery - Graveyard
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 29 - 39) Scarlet Monastery - Library
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 32 - 42) Scarlet Monastery - Armory
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 35 - 45) Scarlet Monastery - Cathedral
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 38 - 48) Scholomance
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 42 - 52) Stratholme - Main Gate
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 46 - 56) Stratholme - Service Entrance
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 57 - 67) Hellfire Ramparts
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 59 - 68) The Blood Furnace
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 62 - 71) Mana Tombs
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]: (Level 65 - 73) Sethekk Halls
+[9:04:25 PM:764] [Instancebuddy v3.0.1.315]:----------------------------------------------------------------------
+[9:04:26 PM:002] New bot added!: Instancebuddy
+[9:04:26 PM:025] New bot added!: Gatherbuddy2
+[9:04:26 PM:028] New bot added!: Grind Bot
+[9:04:26 PM:032] New bot added!: Questing
+[9:04:26 PM:035] New bot added!: PvP
+[9:04:26 PM:038] New bot added!: BG Bot [Beta]
+[9:04:26 PM:042] New bot added!: Mixed Mode
+[9:04:26 PM:046] New bot added!: PartyBot
+[9:04:26 PM:327] New bot added!: Combat Bot
+[9:04:26 PM:344] MeshesFolderPath: C:\Users\006\AppData\Local\HonorbuddyMeshes
+[9:04:26 PM:344] KillBetweenHotspots: True
+[9:04:26 PM:344] AdvancedSettingsMode: True
+[9:04:26 PM:344] LogoutForInactivity: True
+[9:04:26 PM:344] LogoutInactivityTimer: 10
+[9:04:26 PM:344] LogoutInactivityUseForceQuit: False
+[9:04:26 PM:344] ProfileDebuggingMode: False
+[9:04:26 PM:344] FoodAmount: 0
+[9:04:26 PM:344] DrinkAmount: 0
+[9:04:26 PM:344] FormLocationX: 1921
+[9:04:26 PM:344] FormLocationY: -414
+[9:04:26 PM:344] FormWidth: 713
+[9:04:26 PM:344] FormHeight: 411
+[9:04:26 PM:344] SelectedBotIndex: 4
+[9:04:26 PM:344] UseFlightPaths: True
+[9:04:26 PM:344] FindMountAutomatically: True
+[9:04:26 PM:344] UseRandomMount: True
+[9:04:26 PM:344] FoodName: 58261
+[9:04:26 PM:344] DrinkName: 58256
+[9:04:26 PM:344] MountName: 84751
+[9:04:26 PM:344] LootMobs: True
+[9:04:26 PM:344] SkinMobs: False
+[9:04:26 PM:344] NinjaSkin: False
+[9:04:26 PM:344] LootChests: True
+[9:04:26 PM:344] HarvestMinerals: False
+[9:04:26 PM:344] HarvestHerbs: False
+[9:04:26 PM:344] UseMount: True
+[9:04:26 PM:344] PullDistance: 10
+[9:04:26 PM:344] LootRadius: 45
+[9:04:26 PM:344] FindVendorsAutomatically: False
+[9:04:26 PM:344] TrainNewSkills: True
+[9:04:26 PM:344] LearnFlightPaths: True
+[9:04:26 PM:344] LastUsedPath: C:\Users\006\Desktop\Bots\Kick's Profiles\Kick's Profiles\Useful Stuff\testing qo.xml
+[9:04:26 PM:344] LastUsedPath: C:\Users\006\Desktop\Bots\Kick's Profiles\Kick's Profiles\Useful Stuff\testing qo.xml
+[9:04:26 PM:344] MountDistance: 75
+[9:04:26 PM:344] RessAtSpiritHealers: False
+[9:04:26 PM:344] GroundMountFarmingMode: False
+[9:04:26 PM:344] FoodAmount: 0
+[9:04:26 PM:344] DrinkAmount: 0
+[9:04:26 PM:344] FormLocationX: 1921
+[9:04:26 PM:344] FormLocationY: -414
+[9:04:26 PM:344] SelectedBotIndex: 4
+[9:04:26 PM:344] UseFlightPaths: True
+[9:04:26 PM:344] FindMountAutomatically: True
+[9:04:26 PM:344] UseRandomMount: True
+[9:04:26 PM:344] FoodName: 58261
+[9:04:26 PM:344] DrinkName: 58256
+[9:04:26 PM:344] MountName: 84751
+[9:04:26 PM:344] LootMobs: True
+[9:04:26 PM:344] SkinMobs: False
+[9:04:26 PM:344] NinjaSkin: False
+[9:04:26 PM:344] LootChests: True
+[9:04:26 PM:344] HarvestMinerals: False
+[9:04:26 PM:344] HarvestHerbs: False
+[9:04:26 PM:344] UseMount: True
+[9:04:26 PM:344] PullDistance: 10
+[9:04:26 PM:344] LootRadius: 45
+[9:04:26 PM:344] FindVendorsAutomatically: False
+[9:04:26 PM:344] TrainNewSkills: True
+[9:04:26 PM:344] LearnFlightPaths: True
+[9:04:26 PM:344] LastUsedPath: C:\Users\006\Desktop\Bots\Kick's Profiles\Kick's Profiles\Useful Stuff\testing qo.xml
+[9:04:26 PM:344] MountDistance: 75
+[9:04:26 PM:344] RessAtSpiritHealers: False
+[9:04:26 PM:345] Please wait a few seconds while Honorbuddy initializes.
+[9:04:26 PM:346] Activity: Initializing.
+[9:04:26 PM:347] Activity: Loading memory management & tables
+[9:04:26 PM:365] Activity: Loading Spells
+[9:04:26 PM:407] Activity: Initializing Spell Manager
+[9:04:26 PM:425] Activity: Initializing Plugins
+[9:04:26 PM:426] 
+[9:04:27 PM:265] [WeigtSet] Selected weight set: Death Knight-Unholy
+[9:04:27 PM:877] Activity: Initializing Navigator
+[9:04:27 PM:935] Activity: Initializing Blackspot Manager
+[9:04:27 PM:939] Activity: Initializing Battlegrounds
+[9:04:27 PM:957] Activity: Initializing Flight Paths
+[9:04:27 PM:987] Activity: Initializing Routines
+[9:04:27 PM:992] Building spell book
+[9:04:28 PM:000] Spell book built
+[9:04:28 PM:001] Compiling C:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight
+[9:04:28 PM:495] Compiling C:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Druid
+[9:04:29 PM:311] Compiling C:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Paladin
+[9:04:29 PM:835] Compiling C:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Priest
+[9:04:30 PM:497] Compiling C:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\ShamWOW
+[9:04:31 PM:044] Activity: Initialization complete
+[9:04:31 PM:044] Initialization complete.
+[9:04:31 PM:044] Honorbuddy is up-to-date
+[9:04:31 PM:046] Activity: Honorbuddy Startup Complete
+[9:04:35 PM:496] Starting the bot!
+[9:04:35 PM:854] Downloaded tilemap Northrend
+[9:04:35 PM:912] Changed tilemap to Northrend, Tiled: True
+[9:04:36 PM:017] Changing current profile to testing qo
+[9:04:36 PM:442] Chose Fpsware Death Knight(0.0.2) by Fpsware as your combat class!
+[9:04:36 PM:442] Creating 'Rest' behavior
+[9:04:36 PM:443] Creating 'Pull' behavior
+[9:04:36 PM:445] Creating 'Heal' behavior
+[9:04:36 PM:446] Creating 'Combat' behavior
+[9:04:36 PM:507] Cleared POI
+[9:04:36 PM:508] Cleared POI - Reason Starting up
+[9:04:36 PM:509] Cleared POI
+[9:04:36 PM:587] You are a level 85 Unholy DeathKnight
+[9:04:36 PM:633] Loading settings ...
+[9:04:36 PM:643] Settings loaded
+[9:04:38 PM:564] Compiling quest behavior from 'C:\Users\006\Desktop\ßots\HB's\HB 5354\Quest Behaviors\UserSettings.cs'
+[9:04:38 PM:933] Compiling expression '((!HasQuest(12261)) && (!IsQuestCompleted(12261)))' @ line 19
+[9:04:39 PM:166] Compiling expression '((HasQuest(12261)) && (!IsQuestCompleted(12261)))' @ line 24
+[9:04:39 PM:390] Compiling quest behavior from 'C:\Users\006\Desktop\ßots\HB's\HB 5354\Quest Behaviors\FlyTo.cs'
+[9:04:39 PM:641] Goal: Flying to Objective
+[9:04:39 PM:644] [FlyTo-v184(debug) @line 28]: Flying to 'Objective': <4384.706, 1305.638, 150.4314>.
+[9:04:39 PM:754] Activity: Loading Tile/s
+[9:04:39 PM:755] Loading Northrend_29_23
+[9:04:41 PM:147] Compiling quest behavior from 'C:\Users\006\Desktop\ßots\HB's\HB 5354\Quest Behaviors\ForcedDismount.cs'
+[9:04:41 PM:451] Goal: Dismounting
+[9:04:41 PM:570] Goal: Moving to <4384.706, 1305.638, 150.4314>
+[9:04:42 PM:355] Compiling quest behavior from 'C:\Users\006\Desktop\ßots\HB's\HB 5354\Quest Behaviors\WaitTimer.cs'
+[9:04:42 PM:597] Goal: Using item 01s
+[9:04:42 PM:597] Activity: Wait time remaining... 01s... of 02s
+[9:04:43 PM:665] Goal: Using item 00s
+[9:04:43 PM:665] Activity: Wait time remaining... 00s... of 02s
+[9:04:44 PM:664] Goal: Using item for No Place to Run
+[9:04:45 PM:389] Compiling quest behavior from 'C:\Users\006\Desktop\ßots\HB's\HB 5354\Quest Behaviors\DefendObject.cs'
+[9:04:45 PM:682] DefendObject: Attempting to find Defendant...
+[9:04:45 PM:697] Activity: Moving to defend location ...
+[9:04:45 PM:699] DefendObject: PopulateList()!
+[9:04:48 PM:124] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:48 PM:124] Cleared POI - Reason Exception in Root.Tick()
+[9:04:48 PM:124] Cleared POI
+[9:04:48 PM:274] Spell_C::CastSpell(57330, 0, 0x0, 0) [1]
+[9:04:48 PM:284] -Horn of Winter
+[9:04:49 PM:417] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:49 PM:417] Cleared POI - Reason Exception in Root.Tick()
+[9:04:49 PM:417] Cleared POI
+[9:04:49 PM:616] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:49 PM:616] Cleared POI - Reason Exception in Root.Tick()
+[9:04:49 PM:616] Cleared POI
+[9:04:49 PM:827] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:49 PM:827] Cleared POI - Reason Exception in Root.Tick()
+[9:04:49 PM:827] Cleared POI
+[9:04:50 PM:039] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:50 PM:039] Cleared POI - Reason Exception in Root.Tick()
+[9:04:50 PM:039] Cleared POI
+[9:04:50 PM:237] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:50 PM:237] Cleared POI - Reason Exception in Root.Tick()
+[9:04:50 PM:237] Cleared POI
+[9:04:50 PM:431] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:50 PM:431] Cleared POI - Reason Exception in Root.Tick()
+[9:04:50 PM:431] Cleared POI
+[9:04:50 PM:657] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:50 PM:657] Cleared POI - Reason Exception in Root.Tick()
+[9:04:50 PM:657] Cleared POI
+[9:04:50 PM:839] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:50 PM:839] Cleared POI - Reason Exception in Root.Tick()
+[9:04:50 PM:839] Cleared POI
+[9:04:51 PM:049] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:51 PM:049] Cleared POI - Reason Exception in Root.Tick()
+[9:04:51 PM:049] Cleared POI
+[9:04:51 PM:260] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:51 PM:260] Cleared POI - Reason Exception in Root.Tick()
+[9:04:51 PM:260] Cleared POI
+[9:04:51 PM:485] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:51 PM:485] Cleared POI - Reason Exception in Root.Tick()
+[9:04:51 PM:485] Cleared POI
+[9:04:51 PM:698] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:51 PM:698] Cleared POI - Reason Exception in Root.Tick()
+[9:04:51 PM:698] Cleared POI
+[9:04:51 PM:909] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:51 PM:909] Cleared POI - Reason Exception in Root.Tick()
+[9:04:51 PM:909] Cleared POI
+[9:04:52 PM:121] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:52 PM:121] Cleared POI - Reason Exception in Root.Tick()
+[9:04:52 PM:121] Cleared POI
+[9:04:52 PM:331] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:52 PM:331] Cleared POI - Reason Exception in Root.Tick()
+[9:04:52 PM:331] Cleared POI
+[9:04:52 PM:544] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:52 PM:544] Cleared POI - Reason Exception in Root.Tick()
+[9:04:52 PM:544] Cleared POI
+[9:04:52 PM:769] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:52 PM:769] Cleared POI - Reason Exception in Root.Tick()
+[9:04:52 PM:769] Cleared POI
+[9:04:52 PM:979] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:52 PM:979] Cleared POI - Reason Exception in Root.Tick()
+[9:04:52 PM:979] Cleared POI
+[9:04:53 PM:177] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:53 PM:177] Cleared POI - Reason Exception in Root.Tick()
+[9:04:53 PM:177] Cleared POI
+[9:04:53 PM:393] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:53 PM:393] Cleared POI - Reason Exception in Root.Tick()
+[9:04:53 PM:393] Cleared POI
+[9:04:53 PM:602] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:53 PM:602] Cleared POI - Reason Exception in Root.Tick()
+[9:04:53 PM:602] Cleared POI
+[9:04:53 PM:817] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:53 PM:817] Cleared POI - Reason Exception in Root.Tick()
+[9:04:53 PM:817] Cleared POI
+[9:04:54 PM:025] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:54 PM:025] Cleared POI - Reason Exception in Root.Tick()
+[9:04:54 PM:025] Cleared POI
+[9:04:54 PM:248] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:54 PM:248] Cleared POI - Reason Exception in Root.Tick()
+[9:04:54 PM:248] Cleared POI
+[9:04:54 PM:458] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:54 PM:458] Cleared POI - Reason Exception in Root.Tick()
+[9:04:54 PM:458] Cleared POI
+[9:04:54 PM:668] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:54 PM:668] Cleared POI - Reason Exception in Root.Tick()
+[9:04:54 PM:668] Cleared POI
+[9:04:54 PM:894] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:54 PM:894] Cleared POI - Reason Exception in Root.Tick()
+[9:04:54 PM:894] Cleared POI
+[9:04:55 PM:105] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hera.Fpsware.ScourgeStrike.Run(Object context) in c:\Users\006\Desktop\ßots\HB's\HB 5354\CustomClasses\Fpsware Death Knight\Class Specific\Behaviours\Combat.cs:line 874
+   at TreeSharp.Action.RunAction(Object context)
+   at TreeSharp.Action.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.Decorator.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at TreeSharp.PrioritySelector.#h.#nF.MoveNext()
+   at (Object )
+   at TreeSharp.Composite.Tick(Object context)
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+[9:04:55 PM:105] Cleared POI - Reason Exception in Root.Tick()
+[9:04:55 PM:105] Cleared POI
+[9:04:55 PM:285] Stopping the bot!
+[9:04:55 PM:285] Stop called!
+[9:04:55 PM:309] Activity: Honorbuddy Stopped
+[9:04:55 PM:346] System.Threading.ThreadAbortException: Thread was being aborted.
+   at Styx.Logic.BehaviorTree.TreeRoot.Tick()
+   at Styx.Logic.BehaviorTree.TreeRoot.Run()
+[9:04:55 PM:347] System.Threading.ThreadAbortException: Thread was being aborted.
+   at Styx.Logic.BehaviorTree.TreeRoot.Run()

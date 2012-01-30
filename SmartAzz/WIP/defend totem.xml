@@ -1,0 +1,16 @@
+<!--
+/*
+* Quest Behavior Name: DefendTotem
+* QuestID: #ID#
+* Purpose: Defend a totem until the quest is complete - if it fails quest, go and get it again
+* Variables: questid, mobid (totemid), defenduntil (quest complete, objective complete (int), time (#### ms))
+*  MobId: #ID# [If Multiple: { ID1, ID2, ID3 }
+*  QuestId: #ID#
+* Extra-Variables: XYZ
+*  EatPoo: #Poop#
+* 
+* Description: Defend a totem
+* Defend a totem from all attackers who are targetting it or you
+*/		
+-->
+

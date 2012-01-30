@@ -1,0 +1,106 @@
+<HBProfile>
+  <Name></Name>
+  <MinDurability>0.4</MinDurability>
+  <MinFreeBagSlots>2</MinFreeBagSlots>
+  <SellGrey>True</SellGrey>
+  <SellWhite>True</SellWhite>
+  <SellGreen>True</SellGreen>
+  <MailWhite>True</MailWhite>
+  <MailGreen>True</MailGreen>
+  <MailBlue>True</MailBlue>
+  <MailPurple>True</MailPurple>
+
+  <Vendors>
+		<Vendor Name="Gennia Runetotem" Entry="3064" Type="Train" TrainClass="Druid" X="-2315.745" Y="-442.6335" Z="-5.438264" />
+		<Vendor Name="Innkeeper Kauth" Entry="6747" Type="Food" X="-2365.366" Y="-347.3099" Z="-8.957039" />
+  </Vendors>
+  <Mailboxes>
+	<Mailbox X="-2337.279" Y="-367.6273" Z="-8.443566" />
+  </Mailboxes>
+  
+  <SubProfile>
+    <Name>4-10 Mulgore</Name>
+    <MinLevel>4</MinLevel>
+    <MaxLevel>11</MaxLevel>
+
+	<!-- Quest Overrides -->
+	
+    <QuestOrder IgnoreCheckpoints="false">
+		<CustomBehavior File="UserSettings" TrainNewSkills="False" LearnFlightPaths="True" UseFlightPaths="False" LootMobs="True" PullDistance="30" />
+		<Checkpoint Level="4" />
+		<PickUp QuestName="Poison Water" QuestId="20440" GiverName="Mull Thunderhorn" GiverId="2948" />
+		<PickUp QuestName="Sharing the Land" QuestId="14438" GiverName="Ahmo Thunderhorn" GiverId="36644" />
+		<PickUp QuestName="Swoop Hunting" QuestId="761" GiverName="Harken Windtotem" GiverId="2947" />		
+		<CustomBehavior File="SetHearthstone" MobId="6747" X="-2365.366" Y="-347.3099" Z="-8.957039" HearthLocation="215" /> 
+		<PickUp QuestName="Kyle's Gone Missing!" QuestId="11129" GiverName="Ahab Wheathoof" GiverId="23618" />
+		<Checkpoint Level="5" />
+		<!-- Should now be 5! Grind If Not! -->
+			<Objective QuestName="Poison Water" QuestId="20440" Type="CollectItem" ItemId="4759" CollectCount="4" />
+			<Objective QuestName="Swoop Hunting" QuestId="761" Type="CollectItem" ItemId="4769" CollectCount="8" />	
+			<Objective QuestName="Poison Water" QuestId="20440" Type="CollectItem" ItemId="4758" CollectCount="6" />				
+			<Objective QuestName="Sharing the Land" QuestId="14438" Type="KillMob" MobId="42354" KillCount="15" />			
+		<TurnIn QuestName="Sharing the Land" QuestId="14438" TurnInName="Ahmo Thunderhorn" TurnInId="36644" />
+		<PickUp QuestName="The Restless Earth" QuestId="14491" GiverName="Ahmo Thunderhorn" GiverId="36644" />
+		<PickUp QuestName="Morin Cloudstalker" QuestId="24459" GiverName="Ahmo Thunderhorn" GiverId="36644" />
+		<!-- Should now be 6! -->
+		<Checkpoint Level="6" />
+		<PickUp QuestName="Dangers of the Windfury" QuestId="743" GiverName="Ruul Eagletalon" GiverId="2985" />
+		<TurnIn QuestName="Poison Water" QuestId="20440" TurnInName="Mull Thunderhorn" TurnInId="2948" />
+		<PickUp QuestName="Winterhoof Cleansing" QuestId="24440" GiverName="Mull Thunderhorn" GiverId="2948" />
+		<TurnIn QuestName="Swoop Hunting" QuestId="761" TurnInName="Harken Windtotem" TurnInId="2947" />
+		<PickUp QuestName="Mazzranache" QuestId="26188" GiverName="Maur Raincaller" GiverId="3055" />
+		<If Condition="HasQuest(11129) &amp;&amp; !IsQuestCompleted(11129)">
+			<While Condition="HasQuest(11129) &amp;&amp; !IsQuestCompleted(11129)">
+				<RunTo DestName="Where Kyle Is" QuestId="11129" X="-2400.084" Y="-445.3143" Z="-8.467896" />
+				<CustomBehavior File="UseItemOn" QuestId="11129" ItemId="33009" Range="10" WaitTime="1000" NumOfTimes="1" MobType="Npc" MobId="23616" X="-2400.084" Y="-445.3143" Z="-8.467896" />
+			</While>
+		</If>
+		<If Condition="HasQuest(24440) &amp;&amp; !IsQuestCompleted(24440)">
+			<While Condition="HasQuest(24440) &amp;&amp; !IsQuestCompleted(24440)">
+				<RunTo DestName="Winterhoof Water Well" QuestId="24440" X="-2541.554" Y="-704.0692" Z="-8.683101" />
+				<UseItem ItemId="5411" QuestName="Winterhoof Cleansing" QuestId="24440" X="-2541.554" Y="-704.0692" Z="-8.683101" />
+			</While>
+		</If>	
+		<TurnIn QuestName="Morin Cloudstalker" QuestId="24459" TurnInName="Morin Cloudstalker" TurnInId="2988" />	
+		<PickUp QuestName="The Ravaged Caravan" QuestId="749" GiverName="Morin Cloudstalker" GiverId="2988" />
+			<Objective QuestName="Dangers of the Windfury" QuestId="743" Type="CollectItem" ItemId="4751" CollectCount="8" />
+			<If Condition="HasQuest(743) &amp;&amp; !IsQuestCompleted(743)">
+				<CustomBehavior File="UseHearthstone" HearthLocation="222" X="-2570.56" Y="-1283.156" Z="-3.599149" />
+			</If>
+			
+		<TurnIn QuestName="Dangers of the Windfury" QuestId="743" TurnInName="Ruul Eagletalon" TurnInId="2985" />
+		<TurnIn QuestName="Winterhoof Cleansing" QuestId="24440" TurnInName="Mull Thunderhorn" TurnInId="2948" />
+		<PickUp QuestName="Thunderhorn Totem" QuestId="24441" GiverName="Mull Thunderhorn" GiverId="2948" />
+		<TurnIn QuestName="Kyle's Gone Missing!" QuestId="11129" TurnInName="Ahab Wheathoof" TurnInId="23618" />
+		
+		<Checkpoint Level="7" />
+		<TurnIn QuestName="The Ravaged Caravan" QuestId="749" TurnInName="Sealed Supply Crate" TurnInId="2908" />
+		<PickUp QuestName="The Ravaged Caravan" QuestId="751" GiverName="Sealed Supply Crate" GiverId="2908" />
+			<Objective QuestName="Thunderhorn Totem" QuestId="24441" Type="CollectItem" ItemId="4801" CollectCount="6" />
+			<Objective QuestName="Thunderhorn Totem" QuestId="24441" Type="CollectItem" ItemId="4802" CollectCount="6" />
+		<TurnIn QuestName="The Ravaged Caravan" QuestId="751" TurnInName="Morin Cloudstalker" TurnInId="2988" />
+
+		<!-- <Checkpoint Level="7" />
+		-->
+		
+
+		<!--
+<Objective QuestName="Thunderhorn Totem" QuestId="24441" Type="CollectItem" ItemId="4801" CollectCount="6" />
+<Objective QuestName="Thunderhorn Totem" QuestId="24441" Type="CollectItem" ItemId="4802" CollectCount="6" />
+<TurnIn QuestName="Thunderhorn Totem" QuestId="24441" TurnInName="Mull Thunderhorn" TurnInId="2948" />
+<Objective QuestName="Mazzranache" QuestId="26188" Type="CollectItem" ItemId="4805" CollectCount="1" />
+<TurnIn QuestName="Mazzranache" QuestId="26188" TurnInName="Maur Raincaller" TurnInId="3055" />
+<TurnIn QuestName="Winterhoof Cleansing" QuestId="24440" TurnInName="Mull Thunderhorn" TurnInId="2948" />		
+<Objective QuestName="The Restless Earth" QuestId="14491" Type="KillMob" MobId="36872" KillCount="6" />
+<Objective QuestName="The Restless Earth" QuestId="14491" Type="CollectItem" ItemId="49647" CollectCount="1" />
+<TurnIn QuestName="The Restless Earth" QuestId="14491" TurnInName="Ahmo Thunderhorn" TurnInId="36644" />
+		-->
+
+
+
+
+
+
+    </QuestOrder>
+  </SubProfile>
+</HBProfile>

@@ -1,0 +1,271 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading;
+using Styx;
+using Styx.Combat.CombatRoutine;
+using Styx.Helpers;
+using Styx.Logic;
+using Styx.Logic.Combat;
+using Styx.Logic.Pathing;
+using Styx.WoWInternals;
+using Styx.WoWInternals.WoWObjects;
+using System.Drawing;
+
+
+namespace SmartLock
+{
+    public class SmartLock: CombatRoutine
+    {
+        public override sealed string Name { get { return "SmartLock"; } }
+
+        public override WoWClass Class { get { return WoWClass.Warlock; } }
+        public static LocalPlayer Me { get { return ObjectManager.Me; } }
+
+        public static DateTime PetCheckTimer = DateTime.MinValue;
+
+        public static void Debug(string msg, params object[] args)
+        {
+            Logging.WriteDebug(System.Drawing.Color.DarkViolet, "[SL] " + msg, args);
+        }
+
+        #region CC_Begin
+
+
+        public override bool NeedRest
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        public override void Rest()
+        {
+
+        }
+
+        #endregion
+
+        #region Pull
+
+        public override void Pull()
+        {
+  
+
+        }
+
+
+        #endregion
+
+        #region Pull Buffs
+
+        public override bool NeedPullBuffs { get { return false; } }
+
+        public override void PullBuff() { }
+
+        #endregion
+
+        #region Pre Combat Buffs
+
+        public bool NeedPet()
+        {
+            if (DateTime.Now.CompareTo(PetCheckTimer) >= 0)
+            {
+                PetCheckTimer = DateTime.Now.AddSeconds(10);
+            }
+            else
+            {
+
+                return false;
+            }
+            if (Me.Pet == null) return true;
+            if (Me.Pet.IsAlive)
+                return false;
+            if (Me.Pet.Dead)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public override bool NeedPreCombatBuffs
+        {
+            get
+            {
+                if (Me.Mounted)
+                    return false;
+                if (NeedPet())
+                    return true;
+                if (Spells.NeedBuff(Spells.FelArmor))
+                    return true;
+                if (!NeedPet() && Spells.NeedBuff(Spells.SoulLink))
+                    return true;
+
+                return false;
+            }
+        }
+
+        public override void PreCombatBuff()
+        {
+            if (NeedPet())
+                Spells.CastSpell(Spells.SummonFelguard);
+            if (Spells.NeedBuff(Spells.FelArmor))
+                Spells.CastSpell(Spells.FelArmor);
+            if (!NeedPet() && Spells.NeedBuff(Spells.SoulLink))
+                Spells.CastSpell(Spells.SoulLink);
+        }
+
+        #endregion
+
+        #region Combat Buffs
+
+        public bool NeedPetBuffs()
+        {
+            var petAuras = Me.Pet.GetAllAuras();
+            if (petAuras.Exists(a => a.SpellId == Spells.DemonicEmp.Id))
+                return false;
+            return false;
+        }
+        public override bool NeedCombatBuffs
+        {
+            get
+            {
+                if (!NeedPet())
+                    return true;
+                if (!NeedPetBuffs())
+                    return true;
+                if (Spells.NeedBuff(Spells.FelArmor))
+                    return true;
+                if (!NeedPet() && Spells.NeedBuff(Spells.SoulLink))
+                    return true;
+                return false;
+            }
+        }
+
+        public override void CombatBuff()
+        {
+            if (!NeedPet() && !NeedPetBuffs())
+                Spells.CastSpell(Spells.DemonicEmp);
+            if (!NeedPet())
+                Spells.CastSpell(Spells.SummonFelguard);
+            if (Spells.NeedBuff(Spells.FelArmor))
+                Spells.CastSpell(Spells.FelArmor);
+            if (NeedPet() && Spells.NeedBuff(Spells.SoulLink))
+                Spells.CastSpell(Spells.SoulLink);
+        }
+
+        #endregion
+
+        #region Heal
+
+        public override bool NeedHeal { get { return false; } }
+
+        public override void Heal()
+        {
+
+        }
+
+        #endregion
+
+        #region Falling
+
+        public void HandleFalling() { }
+
+        #endregion
+
+        #region Combat
+
+        public static void TargetUnit(WoWUnit unit)
+        {
+            if (unit == null || unit.Guid == Me.CurrentTargetGuid)
+                return;
+            Debug("Target unit " + unit.Name);
+            unit.Target();
+            LuaEventWait evt = new LuaEventWait("PLAYER_TARGET_CHANGED");
+            evt.Wait(500);
+            Debug("Successfuly changed player's target");
+        }
+        public override void Combat()
+        {
+            if (Me.CurrentTarget == null || Me.CurrentTarget.Dead)
+            {
+                Debug("Target is null/dead in Combat!");
+                if (Targeting.Instance.FirstUnit == null || Targeting.Instance.FirstUnit.Dead ||
+                    !Targeting.Instance.FirstUnit.Combat)
+                {
+                    // Just try to pick up our pets target
+                    if (Me.Pet != null && Me.Pet.Combat && Me.Pet.CurrentTarget != null)
+                    {
+                        Debug("Combat: picked up pet target");
+                        TargetUnit(Me.Pet.CurrentTarget);
+                        return;
+                    }
+
+                    //this seems to be ok... happens when combat done. still in combat but target died
+                    //Debug("Combat: oops, no target!");
+                    return;
+                }
+                TargetUnit(Targeting.Instance.FirstUnit);
+                if (Me.CurrentTarget != null)
+                    Debug("Picked up new target: " + Me.CurrentTarget.Name);
+                return;
+            }
+
+            if (!NeedPet() && Me.Pet.HealthPercent < 60)
+            {
+                Spells.CastSpell(Spells.HealthFunnel);
+                return;
+            }
+
+            if (!NeedPet() && Me.Pet.CurrentTarget != Me.CurrentTarget)
+            {
+                Lua.DoString("PetAttack()");
+                Spells.PetCast(Spells.AxeToss);
+                return;
+            }
+           
+            if (Target.HasBuff(Me.CurrentTarget, Spells.CurseOfElements))
+            {
+                Spells.CastSpell(Spells.CurseOfElements);
+                return;
+            }
+
+            if (Target.HasBuff(Me.CurrentTarget, Spells.BaneOfDoom))
+            {
+                Spells.CastSpell(Spells.BaneOfDoom);
+                return;
+            }
+
+            if (Me.CurrentTarget != null && !Me.IsFacing(Me.CurrentTarget))
+            {
+                Me.CurrentTarget.Face();
+                return;
+            }
+
+            if (Target.HasBuff(Me.CurrentTarget, Spells.Immolate))
+            {
+                Spells.CastSpell(Spells.Immolate);
+                return;
+            }
+
+            if (Me.CurrentTarget != null && Me.CurrentTarget.HealthPercent > 30)
+            {
+                if (Me.IsFacing(Me.CurrentTarget))
+                    Spells.CastSpell(Spells.ShadowBolt);
+                return;
+
+            }
+
+            if (Me.HealthPercent > 70 && Me.ManaPercent < 60)
+            {
+                Spells.CastSpell(Spells.LifeTap);
+                return;
+            }
+    }
+
+        #endregion
+ 
+    }
+}
