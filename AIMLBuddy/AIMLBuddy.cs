@@ -96,6 +96,7 @@ namespace AIMLBuddy
             {
                 _waitTime = new TimeSpan(0, 0, 0, (int) Math.Round((_responseList[0].Message.Length*0.22)));
                 TrySend(_responseList.First());
+                _aimlBot.GlobalSettings.updateSetting("location", StyxWoW.Me.ZoneText);
             }
         }
     }
