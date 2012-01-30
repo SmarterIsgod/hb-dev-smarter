@@ -31,6 +31,9 @@
     <RootNamespace>AIMLBuddy</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Honorbuddy">
+      <HintPath>..\..\Bots\Rasel\Honorbuddy.exe</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />

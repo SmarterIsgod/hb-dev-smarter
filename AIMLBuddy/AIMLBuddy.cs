@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AIMLbot;
 using Styx;
 using Styx.Plugins.PluginClass;
@@ -40,7 +41,7 @@ namespace AIMLBuddy
 
         public override Version Version
         {
-            get { return new Version(0, 0, 1, 128); }
+            get { return new Version(0, 0, 2, 0); }
         }
 
 
@@ -56,15 +57,22 @@ namespace AIMLBuddy
 
         private void WoWChatWhisper(WoWChat.ChatWhisperEventArgs e)
         {
-            var user = _userList.Find(o => o.UserID == e.Author);
+            User user = _userList.Find(o => o.UserID == e.Author);
             if (user == null)
             {
                 user = new User(e.Author, _aimlBot);
                 _userList.Add(user);
             }
-            var result = _aimlBot.Chat(new Request(e.Message, user, _aimlBot));
+
+            Result result = _aimlBot.Chat(new Request(e.Message, user, _aimlBot));
+
             var response = new Response(user.UserID, result.Output);
-            _responseList.Add(response);
+
+            if (!_responseList.Contains(response))
+            {
+                _responseList.Add(response);
+            }
+
             _lastRecieved = DateTime.Now;
         }
 
@@ -81,15 +89,13 @@ namespace AIMLBuddy
 
         public override void Pulse()
         {
-            // Check User Expiration
-            // Check Response List
-            if (StyxWoW.Me != null && StyxWoW.Me.IsAlive && StyxWoW.IsInGame && StyxWoW.IsInWorld)
+            if (StyxWoW.Me == null || !StyxWoW.Me.IsAlive || !StyxWoW.IsInGame || !StyxWoW.IsInWorld) return;
+
+
+            if (_responseList.Count > 0)
             {
-                if (_responseList.Count > 0)
-                {
-                    _waitTime = new TimeSpan(0, 0, 0, (int) Math.Round((_responseList[0].Message.Length*0.20)));
-                    TrySend(_responseList[0]);
-                }
+                _waitTime = new TimeSpan(0, 0, 0, (int) Math.Round((_responseList[0].Message.Length*0.22)));
+                TrySend(_responseList.First());
             }
         }
     }
