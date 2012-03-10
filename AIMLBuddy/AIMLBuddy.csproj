@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Honorbuddy">
-      <HintPath>..\..\Bots\Rasel\Honorbuddy.exe</HintPath>
+      <HintPath>..\..\Botting\Honorbuddy_2.0.0.5771\Honorbuddy.exe</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
