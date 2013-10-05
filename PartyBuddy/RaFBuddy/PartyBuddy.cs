@@ -22,21 +22,8 @@ namespace RaFBuddy
         private bool _leaderCheck;
         private string _leaderName;
         private MemberType _memberType;
-
-        public override string Name
-        {
-            get { return "PartyBuddy"; }
-        }
-
-        public override string Author
-        {
-            get { return "Smarter"; }
-        }
-
-        public override Version Version
-        {
-            get { return new Version(0, 0, 2, 6); }
-        }
+        
+        public override Version Version{ get { return new Version(0, 0, 2, 7); }}
 
         public override void Pulse()
         {
@@ -53,6 +40,15 @@ namespace RaFBuddy
                 Lua.Events.AttachEvent("PARTY_MEMBERS_CHANGED", HandlePartyMembersChanged);
                 Logging.WriteDebug(Color.AliceBlue, "[PartyBuddy]: Attached Events");
                 _firstPulse = false;
+
+                /*
+                 * Group Types:
+                 * Standard Party
+                 * LFG Group (Created by DungeonFinder)
+                 * PvP Group
+                 * Raid Group -- GetNumPartyMembers() > 0// GetNumRaidMembers() > 0 -- Remember to check both, as GetNumPartyMembers() can return 0 in a raid, if you are alone in a sub-group.
+                 * Guild?
+                 */
             }
 
             if (_partyCheckTimer.IsFinished)
@@ -208,6 +204,9 @@ namespace RaFBuddy
                 }
             }
         }
+        
+        public override string Name{get { return "PartyBuddy"; }}
+        public override string Author{get { return "Smarter"; }}
     }
 
     public enum MemberType
